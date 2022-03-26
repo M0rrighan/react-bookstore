@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Books from './pages/Books';
 import Categories from './pages/Categories';
+import Header from './components/Header';
 
 import './App.css';
 
@@ -10,6 +11,7 @@ const App = () => (
   // <Router basename="/react-bookstore">
   <Router>
     <div>
+      <Header />
       <Routes>
         <Route
           exact
