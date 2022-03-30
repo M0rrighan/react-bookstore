@@ -4,24 +4,6 @@ import BookItem from './BookItem';
 
 const BookList = () => {
   const booksList = useSelector((state) => state.booksReducer);
-  // const exampleBookList = [
-  //   {
-  //     id: '01',
-  //     title: 'Title 1',
-  //     author: 'Author 1',
-  //     category: 'Category 1',
-  //     progressPercent: '10',
-  //     chapter: 'chapter 1',
-  //   },
-  //   {
-  //     id: '02',
-  //     title: 'Title 2',
-  //     author: 'Author 2',
-  //     category: 'Category 2',
-  //     progressPercent: '20',
-  //     chapter: 'chapter 2',
-  //   },
-  // ];
 
   return (
     <ul className="books-ul">
