@@ -1,9 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { loadListBooks } from '../redux/books/books';
 import BookItem from './BookItem';
 
 const BookList = () => {
+  const dispatch = useDispatch();
   const booksList = useSelector((state) => state.booksReducer);
+
+  useEffect(() => {
+    if (booksList.length < 1) {
+      dispatch(loadListBooks());
+    }
+  }, []);
 
   return (
     <ul className="books-ul">
