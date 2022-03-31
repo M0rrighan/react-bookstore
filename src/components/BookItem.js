@@ -13,7 +13,7 @@ const BookItem = (props) => {
   } = props;
 
   const removeBookFromStore = () => {
-    dispatch(removeBook({ id }));
+    dispatch(removeBook(id));
   };
 
   return (

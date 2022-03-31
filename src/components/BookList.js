@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { loadListBooks } from '../redux/books/books';
+import { listBooks } from '../redux/books/books';
 import BookItem from './BookItem';
 
 const BookList = () => {
@@ -10,7 +10,7 @@ const BookList = () => {
 
   useEffect(() => {
     if (booksList.length < 1) {
-      dispatch(loadListBooks());
+      dispatch(listBooks());
     }
   }, []);
 
