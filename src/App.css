@@ -1,3 +1,35 @@
-/* .App {
-  text-align: center;
-} */
+#root {
+  background-color: var(--dirty-white);
+  width: 87.5%;
+  margin: 10.391074% 6.25%;
+  border-radius: 4px;
+}
+
+.books-page,
+.categories-page {
+  background-color: var(--dirty-white);
+  box-shadow: 3rem 2rem 50px 4px rgb(0 0 0 / 18%);
+  padding: 0 6.25rem;
+  padding-top: 2.313rem;
+  padding-bottom: 4.5rem;
+  border-radius: 4px;
+}
+
+.books-ul {
+  padding-bottom: 1.562rem;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.button {
+  width: 11.5rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  color: var(--dirty-white);
+  background-color: var(--azure);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

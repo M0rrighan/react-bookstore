@@ -17,6 +17,12 @@
   --azure: #0290ff;
 }
 
+/* temporary - to remove */
+html {
+  width: 100rem;
+  height: 89.625rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +60,7 @@ body {
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #fff;
+  color: var(--dirty-white);
 }
 
 .text-style-3 {

@@ -51,10 +51,11 @@ const BookItem = (props) => {
           <p className="percent-txt">completed</p>
         </div>
       </div>
+      <div className="vert-separator" />
       <div className="book-chapter">
         <p className="upper chapter-title">Current Chapter</p>
         <p className="chapter-name">{chapter}</p>
-        <button type="button" className="upper">Update Progress</button>
+        <button type="button" className="button upper">Update Progress</button>
       </div>
     </div>
   );
