@@ -30,7 +30,7 @@ const BookItem = (props) => {
             {author}
           </div>
         </div>
-        <ul className="flex interactions">
+        <ul className="interactions">
           <li>Comments</li>
           <li>
             <button type="button" onClick={removeBookFromStore}>Remove</button>
