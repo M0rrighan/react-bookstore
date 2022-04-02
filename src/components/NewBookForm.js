@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import randomId from 'random-id';
 import { addBook } from '../redux/books/books';
+import './newBookForm.css';
 
 function NewBookForm() {
   const dispatch = useDispatch();
@@ -75,33 +76,38 @@ function NewBookForm() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={submitBookToStore}>
-        <input
-          type="text"
-          placeholder="Book titile"
-          onChange={updateTitle}
-          value={title}
-          required
-        />
-        <input
-          type="text"
-          placeholder="Author"
-          onChange={updateAuthor}
-          value={author}
-          required
-        />
+        <div className="input-wrapper">
+          <input
+            type="text"
+            placeholder="Book titile"
+            onChange={updateTitle}
+            value={title}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Author"
+            onChange={updateAuthor}
+            value={author}
+            required
+          />
+        </div>
         <select
+          id="categories"
           onChange={updateCategory}
-          defaultValue="Unset"
+          className="select-categories"
+          placeholder="Category"
+          defaultValue=""
           required
         >
-          <option value="Unset" disabled hidden>Category</option>
+          <option key="" value="" disabled hidden>Category</option>
           {selectOptions}
         </select>
 
-        <button type="submit">Add book</button>
+        <button className="button upper" type="submit">Add book</button>
       </form>
     </div>
   );

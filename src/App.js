@@ -9,7 +9,7 @@ import './App.css';
 
 const App = () => (
   // <Router basename="/react-bookstore">
-  <Router>
+  <Router basename="/react-bookstore">
     <div>
       <Header />
       <Routes>

@@ -9,7 +9,7 @@ const Categories = () => {
     dispatch(checkStatus());
   };
   return (
-    <div>
+    <div className="categories-page">
       <button
         type="button"
         onClick={checkPageStatus}

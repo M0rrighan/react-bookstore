@@ -17,9 +17,9 @@ const BookItem = (props) => {
   };
 
   return (
-    <div className="book-item">
-      <div className="left">
-        <div className="book-info">
+    <div className="flex book-item">
+      <div className="flex f-col left">
+        <div className="flex f-col">
           <div className="book-category">
             {category}
           </div>
@@ -38,23 +38,24 @@ const BookItem = (props) => {
           <li>Edit</li>
         </ul>
       </div>
-      <div className="book-progress">
+      <div className="flex book-progress">
         <CircularProgressbar
           className="circular-progressbar"
           value={progressPercent}
         />
         <div>
-          <p>
+          <p className="percent-num">
             {progressPercent}
             %
           </p>
-          <p>completed</p>
+          <p className="percent-txt">completed</p>
         </div>
       </div>
+      <div className="vert-separator" />
       <div className="book-chapter">
-        <p className="upper">Current Chapter</p>
-        <p>{chapter}</p>
-        <button type="button" className="upper">Update Progress</button>
+        <p className="upper chapter-title">Current Chapter</p>
+        <p className="chapter-name">{chapter}</p>
+        <button type="button" className="button upper">Update Progress</button>
       </div>
     </div>
   );
