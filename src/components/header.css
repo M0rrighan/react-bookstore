@@ -16,8 +16,7 @@ header {
 
 .navbar {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   margin-right: 0.75rem;
   align-items: center;
   gap: 0.75rem;

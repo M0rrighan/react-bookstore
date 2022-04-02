@@ -34,13 +34,13 @@ form select {
   border-radius: 4px;
 }
 
+form select {
+  width: 100%;
+}
+
 form input:focus,
 form select:focus {
   outline: 0.5px solid var(--pinkish-grey);
-}
-
-form select {
-  width: 100%;
 }
 
 form input::placeholder {
@@ -55,7 +55,7 @@ form input::placeholder {
 }
 
 form .button {
-  font-family: 'Roboto Slab-Bold', serif;
+  font-family: "Roboto Slab-Bold", serif;
   letter-spacing: 0;
   font-weight: bold;
   padding: 0.887rem 3.5rem;
