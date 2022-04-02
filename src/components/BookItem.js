@@ -20,7 +20,7 @@ const BookItem = (props) => {
     <div className="flex book-item">
       <div className="flex f-col left">
         <div className="flex f-col">
-          <div className="text-style-2 book-category">
+          <div className="book-category">
             {category}
           </div>
           <div className="book-title">

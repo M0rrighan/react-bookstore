@@ -6,7 +6,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1.438rem 7.2195% 1.688rem; */
   font-family: Montserrat, sans-serif;
   background-color: #fff;
   border-bottom: 1px solid var(--grey-border);
@@ -25,7 +24,7 @@ header {
 }
 
 .navbar h2 {
-  font-size: 1.875rem;
+  font-size: 1.275rem;
   font-weight: bold;
   color: var(--azure);
 }
@@ -35,7 +34,6 @@ nav {
   gap: 2.563rem;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
-  color: var(--black-two);
 }
 
 .user-icon-container {
@@ -64,7 +62,7 @@ nav {
   }
 }
 
-@media (min-width: 749px) {
+@media (min-width: 768px) {
   header {
     padding: 1.438rem 7.2195% 1.688rem;
   }
@@ -72,5 +70,15 @@ nav {
   .navbar {
     flex-direction: row;
     gap: 2.938rem;
+  }
+
+  .navbar h2 {
+    font-size: 1.575rem;
+  }
+
+  @media (min-width: 1264px) {
+    .navbar h2 {
+      font-size: 1.875rem;
+    }
   }
 }

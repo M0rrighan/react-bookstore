@@ -1,7 +1,6 @@
 #root {
   background-color: var(--dirty-white);
-  width: 87.5%;
-  margin: 10.391074% 6.25%;
+  margin: 3.45% 2%;
   border-radius: 4px;
 }
 
@@ -34,7 +33,11 @@
   cursor: pointer;
 }
 
-@media (min-width: 749px) {
+@media (min-width: 768px) {
+  #root {
+    margin: 7.3% 4.125%;
+  }
+
   .books-ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,6 +46,11 @@
 }
 
 @media (min-width: 1264px) {
+  #root {
+    width: 87.5%;
+    margin: 10.391074% 6.25%;
+  }
+
   .books-ul {
     display: block;
   }

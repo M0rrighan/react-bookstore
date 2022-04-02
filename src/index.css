@@ -3,24 +3,14 @@
 
 /* Zeplin design Color Palette */
 :root {
-  --bubble-gum-pink: #ff5ab7;
-  --black: #1e1e1e;
-  --black0: #000;
   --black-two: #121212;
   --dirty-white: #fafafa;
   --pale-grey: #f5f6fa;
   --pinkish-grey: #c4c4c4;
-  --pinkish-grey2: #c7c7c7;
   --grey-border: #e8e8e8;
   --warm-grey: #888;
   --cool-blue: #4386bf;
   --azure: #0290ff;
-}
-
-/* temporary - to remove */
-html {
-  /* width: 100rem;
-  height: 89.625rem; */
 }
 
 * {
@@ -36,40 +26,5 @@ html {
 body {
   margin: 0;
   background-color: var(--pale-grey);
-  color: var(--black-two);
-}
-
-/* Zeplin design Text style catalog */
-.text-style-2 {
-  font-family: Montserrat, sans-serif;
-  font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--black-two);
-}
-
-.text-style {
-  font-family: RobotoSlab, sans-serif;
-  font-size: 0.813rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: var(--dirty-white);
-}
-
-.text-style-3 {
-  font-family: Montserrat, sans-serif;
-  font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
   color: var(--black-two);
 }
