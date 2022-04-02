@@ -33,6 +33,9 @@
   cursor: pointer;
 }
 
+/* ******* */
+/* @ MEDIA */
+/* ******* */
 @media (min-width: 768px) {
   #root {
     margin: 7.3% 4.125%;
